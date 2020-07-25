@@ -22,7 +22,7 @@ def get_japanese_emoticon(file_path, e_emoticon)
   emoticons.each do |emotion, language|
     language.each do |inner_key, emoticon|
       if emoticon == e_emoticon
-        j_meaning = inner_key
+        j_meaning = emoticon
       end
     end
     if j_meaning == ""
