@@ -1,6 +1,6 @@
 # require modules here
 require 'yaml'
-def load_library
+def load_library(file_path = 'lib/emoticons.yml')
   # code goes here
   emoticon_library = YAML.load_file('lib/emoticons.yml')
   result = emoticon_library.each_with_object({}) do |(key, value), final_hash|
