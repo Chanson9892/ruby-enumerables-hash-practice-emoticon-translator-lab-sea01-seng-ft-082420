@@ -6,8 +6,8 @@ def load_library(file_path = 'lib/emoticons.yml')
   result = emoticon_library.each_with_object({}) do |(key, value), final_hash|
     if !final_hash[key]
       final_hash[key] ={
-        :english => value[0]
-        :japanese => value[1]
+        english: => value[0]
+        japanese: => value[1]
       }
     end
     result
