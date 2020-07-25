@@ -9,6 +9,8 @@ def load_library
         :english => value[0]
         :japanese => value[1]
       }
+    end
+    result
   end
 end
 
